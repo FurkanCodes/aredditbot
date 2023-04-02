@@ -1,0 +1,43 @@
+{
+  "plugins": ["import", "@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "settings": {
+    "import/ignore": ["node_modules"]
+  },
+  "env": {
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["reportWebVitals.js", "node_modules/", "build/"],
+  "rules": {
+    "import/default": "error", // Ensure a default export is present, given a default import.
+    "import/first": "error", // Ensure all imports appear before other statements
+    "import/named": "error", // Ensure named imports correspond to a named export in the remote file
+    "import/newline-after-import": ["warn", { "count": 1 }], // Enforce 1 new line after import statements
+    "import/no-useless-path-segments": "warn", // Prevent unnecessary path segments in import and require statements
+    "import/no-absolute-path": "warn",
+    "import/no-unused-modules": ["error", { "unusedExports": true }],
+    "semi": [
+      "warn",
+      "always" // always semicolons
+    ],
+    "no-console": "warn",
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "key-spacing": [
+      "warn",
+      {
+        "beforeColon": false
+      }
+    ],
+    "@typescript-eslint/array-type": "error",
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-empty-function": "off"
+  }
+}

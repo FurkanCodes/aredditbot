@@ -1,0 +1,9 @@
+Question;
+    How to stop bot giving delta to the same author by the same commentor everytime it runs?
+     ---> Get the author name for the post
+     ---> Get the commentor name that has commented "Delta Icon"
+     ---> Check if the "COMMENTOR" has already awarded *increase()* the "AUTHOR"
+     ---> If "COMMENTOR" had already awarded *increase()* the "AUTHOR"
+     ---> Set "DELTA" value of the "AUTHOR" to the *PREVIOUS* delta state.
+            ---> Store "DELTA" amount in its own variable.
+            ---> Set "DELTA" to previous state (I have no idea how and I am totally lost at this point)

@@ -1,2 +1,6 @@
-# aredditbot
-A simple reddit upvote bote which checks comments. Then, if there is a pre-designated emoji or icon in the comments, it automatically creates a user flair for the poster and assigns a pre-designated flair which shows the poster's reputation. Still work-in-progress.
+# TrueGamingBot
+
+A simple script that posts a hardcoded entry to https://www.reddit.com/r/tgtestbot/
+
+"yarn install" to install dependencies
+"yarn start" to run the script
